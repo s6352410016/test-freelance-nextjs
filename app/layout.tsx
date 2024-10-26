@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
+import Header from "@/components/header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,7 +34,8 @@ export default function RootLayout({
       >
         <SidebarProvider>
           <AppSidebar />
-          <main>
+          <main className="p-4 w-full">
+            <Header />
             {children}
           </main>
         </SidebarProvider>
