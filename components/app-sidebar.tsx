@@ -37,8 +37,8 @@ import Image from "next/image";
 
 export function AppSidebar() {
     return (
-        <Sidebar className="p-2 bg-white">
-            <SidebarHeader className="bg-white">
+        <Sidebar className="p-2 bg-white dark:bg-gray-900">
+            <SidebarHeader className="bg-white dark:bg-gray-900">
                 <div className="flex flex-col justify-center">
                     <div className="flex justify-between items-center">
                         <Image
@@ -49,18 +49,18 @@ export function AppSidebar() {
                         />
                         <SidebarTrigger />
                     </div>
-                    <form className="border border-gray-400 rounded-md flex items-center gap-x-2 w-full h-[40px] mt-4 px-3 py-2">
+                    <form className="border border-gray-400 rounded-md flex items-center gap-x-2 w-full h-[40px] mt-4 px-3 py-2 dark:border-gray-600">
                         <Search className="w-4 h-4" />
                         <input
                             type="text"
-                            className="outline-none border-none w-3/4 text-sm"
+                            className="outline-none border-none w-3/4 text-sm bg-transparent"
                             placeholder="Search Menu..."
                         />
                     </form>
                 </div>
             </SidebarHeader>
             <ScrollArea>
-                <SidebarContent className="bg-white py-2">
+                <SidebarContent className="bg-white py-2 dark:bg-gray-900">
                     <SidebarMenu>
                         <SidebarMenuItem>
                             <SidebarMenuButton>
