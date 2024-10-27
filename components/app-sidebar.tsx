@@ -42,7 +42,7 @@ export function AppSidebar() {
                 <div className="flex flex-col justify-center">
                     <div className="flex justify-between items-center">
                         <Image
-                            src="/logo.png"
+                            src="/Logo.png"
                             width={120}
                             height={120}
                             alt="logo"
