@@ -11,7 +11,7 @@ export default function BannerImageUpload() {
         <div
             onClick={() => bannerImgRef.current?.click()}
             className="pr-16 flex flex-col gap-y-2">
-            <Label htmlFor="name" className="text-gray-600">Banner Image *</Label>
+            <Label htmlFor="name" className="text-gray-600 text-xs">Banner Image *</Label>
             <div className="border border-dotted w-[170px] h-[170px] rounded-lg border-gray-300 flex items-center justify-center relative cursor-pointer hover:opacity-80 dark:border-gray-600">
                 <CloudUpload className="h-14 w-14 text-gray-300" />
                 <SquarePen className="h-5 w-5 text-blue-600 absolute top-2 right-2 cursor-pointer" />

@@ -42,7 +42,7 @@ export default function SubRoutes({ style }: { style?: string; }) {
                 return dot ? (
                     <div
                         key={index}
-                        className="relative w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center cursor-pointer trasition hover:bg-gray-200 duration-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                        className="relative p-3 rounded-full bg-gray-100 flex items-center justify-center cursor-pointer trasition hover:bg-gray-200 duration-200 dark:bg-gray-800 dark:hover:bg-gray-700"
                     >
                         <Icon className="h-5 w-5 dark:text-gray-400" />
                         {dot}
@@ -51,7 +51,7 @@ export default function SubRoutes({ style }: { style?: string; }) {
                     <div
                         onClick={() => (theme === "system" || theme === "light") ? setTheme("dark") : setTheme("system")}
                         key={index}
-                        className="relative w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center cursor-pointer trasition hover:bg-gray-200 duration-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                        className="relative p-3 rounded-full bg-gray-100 flex items-center justify-center cursor-pointer trasition hover:bg-gray-200 duration-200 dark:bg-gray-800 dark:hover:bg-gray-700"
                     >
                         {(theme === "system" || theme === "light") ? (
                             <Icon className="h-5 w-5 dark:text-gray-400" />
@@ -62,7 +62,7 @@ export default function SubRoutes({ style }: { style?: string; }) {
                 ) : (
                     <div
                         key={index}
-                        className="relative w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center cursor-pointer trasition hover:bg-gray-200 duration-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+                        className="relative p-3 rounded-full bg-gray-100 flex items-center justify-center cursor-pointer trasition hover:bg-gray-200 duration-200 dark:bg-gray-800 dark:hover:bg-gray-700"
                     >
                         <Icon className="h-5 w-5 dark:text-gray-400" />
                     </div>

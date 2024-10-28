@@ -39,18 +39,13 @@ export default function MainRoutes({ style }: { style?: string; }) {
             style
         )}>
             {mainRoutes.map(({ icon: Icon, title, endIcon: EndIcon }, index) => {
-                return EndIcon ? (
+                return (
                     <div key={index} className="flex items-center gap-x-3 hover:opacity-85">
                         <Icon className="h-5 w-5 text-blue-600 dark:text-gray-400" />
                         <p className="text-sm text-semibold text-gray-600 dark:text-gray-400">{title}</p>
-                        <EndIcon className="h-6 w-6 text-blue-600 dark:text-gray-400" />
+                        {EndIcon && <EndIcon className="h-6 w-6 text-blue-600 dark:text-gray-400" />}
                     </div>
-                ) : (
-                    <div key={index} className="flex items-center gap-x-3 hover:opacity-85">
-                        <Icon className="h-5 w-5 text-blue-600 dark:text-gray-400" />
-                        <p className="text-sm text-semibold text-gray-600 dark:text-gray-400">{title}</p>
-                    </div>
-                )
+                );
             })}
         </div>
     );

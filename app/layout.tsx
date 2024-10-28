@@ -42,7 +42,7 @@ export default function RootLayout({
         >
           <SidebarProvider>
             <AppSidebar />
-            <main className="p-4 w-full dark:bg-gray-900">
+            <main className="p-4 w-full dark:bg-gray-900 relative">
               <Header />
               {children}
               <Footer />

@@ -1,3 +1,5 @@
+"use client";
+
 import {
     Sidebar,
     SidebarContent,
@@ -34,8 +36,13 @@ import {
     Square
 } from 'lucide-react';
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 export function AppSidebar() {
+    const pathname = usePathname();
+    const router = useRouter();
+
     return (
         <Sidebar className="p-2 bg-white dark:bg-gray-900">
             <SidebarHeader className="bg-white dark:bg-gray-900">
@@ -190,7 +197,12 @@ export function AppSidebar() {
                                 </SidebarMenuItem>
                             </Collapsible>
                         </SidebarMenu>
-                        <SidebarMenuButton>
+                        <SidebarMenuButton
+                            onClick={() => router.push("/banner")}
+                            className={cn(
+                                pathname === "/banner" && "bg-gray-100"
+                            )}
+                        >
                             <div className="flex items-center gap-x-2">
                                 <ImageIcon className="w-5 h-5 text-gray-500" />
                                 <p className="font-semibold text-xs text-gray-500">Banners</p>
